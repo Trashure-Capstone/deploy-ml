@@ -1,0 +1,9 @@
+runtime: python39
+service: ml
+entrypoint: gunicorn wsgi:application
+
+instance_class: F4
+
+handlers:
+- url: /.*
+  script: auto
