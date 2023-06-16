@@ -1,5 +1,6 @@
 runtime: python39
-service: ml
+service: machinelearning
+
 entrypoint: gunicorn wsgi:application
 
 instance_class: F4
