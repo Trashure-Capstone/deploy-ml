@@ -5,3 +5,5 @@ gunicorn
 pillow
 ultralytics
 onnxruntime
+torch
+ultralytics

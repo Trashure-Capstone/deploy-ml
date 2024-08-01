@@ -1,0 +1,143 @@
+#drop-area {
+  background-color: #f8f9fa; /* Warna latar belakang abu-abu muda */
+  color: #495057; /* Warna teks abu-abu tua */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drop-text {
+  z-index: 1;
+}
+
+.preview-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Sembunyikan secara default */
+}
+
+#image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: none; /* Sembunyikan secara default */
+}
+
+#drop-area:hover .remove-button {
+  display: block; /* Tampilkan saat dihover */
+}
+
+.drop-area-card .card-body {
+  padding: 0; /* Hapus padding pada card body drop area */
+}
+
+.result-area-card .card-body {
+  padding: 2rem; /* Tambahkan padding pada card body result */
+}
+
+.result-content {
+  margin-top: 20px; /* Beri jarak antara judul dan konten */
+}
+
+.icon-container {
+  height: 100px; /* Sesuaikan tinggi container ikon */
+  display: flex;
+  align-items: center;
+}
+.result-area-card {
+  overflow: hidden; /* Untuk memastikan elemen di dalam card terpotong sesuai border radius */
+}
+.table th {
+  background-color: #343a40; /* Warna latar belakang header */
+  color: white; /* Warna teks header */
+  font-weight: bold;
+  padding: 0.75rem;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Warna latar belakang baris genap */
+}
+
+.table tbody tr:hover {
+  background-color: #e2e6ea; /* Warna latar belakang saat hover */
+}
+.card-body {
+  padding: 1.5rem; /* Contoh padding */
+}
+.card {
+  border-radius: 0.5rem; /* Contoh border radius */
+}
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Contoh box shadow */
+}
+.container {
+  width: 90%; /* Sesuaikan lebar sesuai kebutuhan */
+  max-width: 1920px; /* Batasi lebar maksimum agar tidak terlalu melebar */
+  margin: 1rem auto; /* Margin atas-bawah 1rem, otomatis di kiri-kanan */
+  /* padding: 1rem;  Hapus padding jika tidak diperlukan */
+}
+.title-box {
+  border-radius: 15px; /* Mengatur tingkat lengkungan sudut */
+  width: fit-content; /* Membuat lebar box sesuai dengan konten */
+  margin: 0; /* Membuat box berada di tengah */
+}
+.title {
+  border-radius: 10px; /* Mengatur tingkat lengkungan sudut */
+  width: fit-content; /* Membuat lebar box sesuai dengan konten */
+  margin: 0; /* Membuat box berada di tengah */
+}
+/* Ukuran gambar untuk layar kecil */
+@media (max-width: 767px) {
+  .table img.img-thumbnail {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+/* Ukuran gambar untuk layar sedang */
+@media (min-width: 768px) and (max-width: 991px) {
+  .table img.img-thumbnail {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+/* Ukuran gambar untuk layar besar */
+@media (min-width: 992px) {
+  .table img.img-thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+.modal-body p {
+  margin-bottom: 0.5rem; /* Atur margin bawah teks */
+}
+
+.modal-footer {
+  justify-content: space-between; /* Atur jarak antar tombol */
+}
+.badge {
+  padding: 0.25em 0.5em; /* Sesuaikan padding sesuai kebutuhan */
+  font-size: 0.75em; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-weight: bold;
+  border-radius: 0.25rem; /* Tambahkan border radius jika diinginkan */
+}
+.review-button {
+  background-color: #198754; /* Warna hijau Bootstrap */
+  border-color: #198754; /* Warna border hijau Bootstrap */
+}
+
+.review-button:hover {
+  background-color: #157347; /* Warna hijau lebih gelap saat dihover */
+  border-color: #157347; /* Warna border hijau lebih gelap saat dihover */
+}
